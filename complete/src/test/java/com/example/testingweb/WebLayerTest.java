@@ -12,6 +12,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.test.web.servlet.MockMvc;
 
+/*
+* Agar instance yang dibuat hanya HomeController kita bisa menambahkannya pada @WebMvcTest
+* */
 @WebMvcTest(HomeController.class)
 //tag::test[]
 public class WebLayerTest {

@@ -7,6 +7,11 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+/*
+* Melakukan test untuk memastikan apakah class yang dibangun
+* beserta dependensinya berjalan dengan baik
+*
+* */
 @SpringBootTest
 public class SmokeTest {
 
@@ -14,7 +19,7 @@ public class SmokeTest {
 	private HomeController controller;
 
 	@Test
-	public void contextLoads() throws Exception {
+	public void contextLoads() {
 		assertThat(controller).isNotNull();
 	}
 }

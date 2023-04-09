@@ -13,6 +13,12 @@ import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMock
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.web.servlet.MockMvc;
 
+/*
+* Cara Pengetesan agar tidak menjalankan server secara keseluruhan
+* Tetapi Spring Application Context secara keseluruhan tetap berjalan
+*
+* agar pengujian yang dilakukan hanya untuk web layer, kita bisa gunakan @WebMvcTest
+* */
 @SpringBootTest
 @AutoConfigureMockMvc
 public class TestingWebApplicationTest {
